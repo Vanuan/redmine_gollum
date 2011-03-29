@@ -21,7 +21,7 @@ Redmine::Plugin.register :redmine_gollum_wiki do
   name 'Redmine Gollum plugin'
   author 'Kang-min Liu <gugod@gugod.org>'
   description 'Integration of gollum (github wiki) with Redmine'
-  version '0.0.1'
+  version '0.0.2'
   url 'https://github.com/gugod/redmine-gollumn/'
   # author_url 'http://gugod.org'
 
