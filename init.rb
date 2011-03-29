@@ -33,7 +33,7 @@ Redmine::Plugin.register :redmine_gollum_wiki do
     permission :edit_gollum_wiki,   :gollum => [:edit, :update]
     permission :delete_gollum_wiki, :gollum => [:destroy]
 
-    permission :manage_gollum_wiki, :gollum => [:index]
+    permission :manage_gollum_wiki, :gollum_wikis => [:index,:show, :update]
   end
 
   menu :project_menu, :gollum_wiki, { :controller => :gollum, :action => :index }, :caption => 'Wiki', :after => 'Issues', :param => :project_id
